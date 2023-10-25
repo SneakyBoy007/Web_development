@@ -1,0 +1,14 @@
+.link-with-icon {
+    background: url("Labo_6/Oefening_5/images/link.png")) no-repeat left center;
+    padding-left: 20px;
+}
+
+
+.link-with-icon::before {
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background: url("Labo_6/Oefening_5/images/link.png") center center no-repeat;
+    margin-right: 5px;
+}

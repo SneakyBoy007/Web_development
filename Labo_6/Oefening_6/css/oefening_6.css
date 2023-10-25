@@ -1,0 +1,13 @@
+.checklist {
+    list-style: none;
+    padding: 0;
+}
+
+.checklist li::before {
+    content: "\2611"; /* Unicode voor ☑ (niet-aangevinkt vakje) */
+    margin-right: 5px;
+}
+
+.checklist li.checked::before {
+    content: "\2612"; /* Unicode voor ☒ (aangevinkt vakje) */
+}
