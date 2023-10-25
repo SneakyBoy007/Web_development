@@ -1,0 +1,17 @@
+.menu > li:nth-child(1) > a {
+    color: red;
+    display: inline-block;
+    width: 150px;
+}
+
+.menu > li:nth-child(2) > a {
+    color: red;
+    display: inline-block;
+    width: 150px;
+}
+
+.menu > li:nth-child(4) > a {
+    color: red;
+    display: inline-block;
+    width: 150px;
+}
