@@ -7,7 +7,7 @@ body {
     justify-content: center; /* Horizontale uitlijning in het midden */
     align-items: center; /* Verticale uitlijning in het midden */
     height: 100vh; /* Zorgt ervoor dat de container de volledige hoogte van het venster inneemt */
-    background-image: url('img/wp5303764.jpg');
+    background-image: url('img/b2c93c26d26b6a1f0bd084bee47f7674.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -22,7 +22,7 @@ body {
 /* Opmaak van kopteksten */
 h1 {
     font-size: 2em;
-    color: #000000;
+    color: #333;
 }
 
 h2 {
