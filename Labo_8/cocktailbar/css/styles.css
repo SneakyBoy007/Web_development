@@ -10,6 +10,11 @@ header {
     padding: 20px 0;
 }
 
+header p img {
+    width: 20%;
+    height: 20%;
+}
+
 .origin {
     width: 70%;
     float: left;
@@ -36,21 +41,38 @@ header {
     color: #444444;
     background-color: #a7cece;
     border: 1px dotted #fff;
+    overflow: hidden;
 }
 
-.image-container {
+#guarantee img {
     float: left;
     margin-right: 10px;
+    width: 60px;
+    height: 60px;
+    padding: 0;
+}
+
+#guarantee p {
+    margin: 0;
+    overflow: hidden;
 }
 
 #guarantee a {
     display: block;
 }
 
-#guarantee p:first-child img {
+
+.image-container {
     float: left;
-    margin-right: 10px;
-    margin-bottom: 10px;
+}
+
+#guarantee a {
+    display: block;
+}
+
+.ster {
+    float: left;
+    padding-bottom: 20px;
 }
 
 a {
