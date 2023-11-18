@@ -1,0 +1,95 @@
+body {
+    width: 95%;
+    margin: 0 auto;
+    font-family: Verdana, Helvetica, Arial, sans-serif;
+    font-size: 1.2em;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.origin {
+    width: 70%;
+    float: left;
+    box-sizing: border-box;
+}
+
+.specials {
+    width: 30%;
+    float: right;
+    box-sizing: border-box;
+    border: 1px solid #007BFF;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    background: url('../images/cocktail.gif') top center repeat-x;
+    background-size: auto;
+
+}
+
+#guarantee {
+    margin: 30px;
+    padding: 20px;
+    color: #444444;
+    background-color: #a7cece;
+    border: 1px dotted #fff;
+}
+
+.image-container {
+    float: left;
+    margin-right: 10px;
+}
+
+#guarantee a {
+    display: block;
+}
+
+#guarantee p:first-child img {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+a {
+    color: #000000;
+}
+
+h1 {
+    color: #007e7e;
+    font-size: 150%;
+}
+
+h2 {
+    color: #007e7e;
+    font-size: 130%;
+}
+
+.specials h1 {
+    color: #833a93;
+    font-size: 150%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.specials h2 {
+    color: #1c9a13;
+    font-size: 130%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.specials a:hover {
+    background-color: #8B4513;
+    color: #fff;
+}
+
+footer {
+    clear: both;
+    text-align: center;
+    font-size: 0.6em;
+    margin-top: 20px;
+}
+
