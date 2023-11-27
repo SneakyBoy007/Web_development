@@ -1,0 +1,124 @@
+body{
+    width: 95%;
+    margin: 0 auto;
+    font-family: Arial, Helvatica, sans-serif;
+}
+header{
+    height: 200px;
+    background-image: url("../Images/bgsky3.jpg");
+    text-align: center;
+    background-size: cover;
+
+}
+header > img {
+    position: absolute;
+    margin-right: 90px;
+    margin-bottom: 60px;
+    top: 80px;
+    right: 400px;
+}
+header > h1 {
+    color: darkblue;
+    font-size: 300%;
+    font-weight: bold;
+    font-style: italic;
+
+}
+header > h2 {
+    color: darkblue;
+    font-size: 240%;
+    font-weight: bold;
+}
+
+article{
+    width: 25%;
+    background-color: #dddddd;
+    float: right;
+    border: 1px solid #999999;
+}
+article > p{
+    color: #666666;
+    font-size: 90%;
+    padding: 10px 10px;
+}
+article > h3 {
+    color: white;
+    background-color: blue;
+    text-align: center;
+    font-size: 120%;
+}
+main{
+    width: 75%;
+    box-sizing: border-box;
+
+}
+main > div > p {
+    background: white;
+    color: black;
+    text-align: justify;
+    margin-right: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+main > div > img{
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    float:left;
+}
+
+main > div > p > span {
+    color: blue;
+    font-weight: bold;
+    font-style: italic;
+}
+
+main > div > p > b {
+    font-weight: bolder;
+}
+
+main > figure {
+    background-color: #999999;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 20px 0 0;
+    padding: 20px;
+}
+main   > figure > figcaption {
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+main > figure > figcaption > img {
+    width: 180px;
+    height: 180px;
+    padding: 10px ;
+    border: 1px dotted #999999;
+    background-color: white;
+    border-radius: 5px;
+}
+
+section  {
+    background-color: #666666;
+}
+section>div{
+    margin-left: 120px;
+    display: inline-block;
+}
+section a:hover{
+    color:red;
+}
+section>div>ul>li{
+    color: white;
+    line-height: 2em;
+}
+section a{
+    color:white;
+}
+footer{
+    text-align: center;
+    background-color: white;
+    color: black;
+}
