@@ -69,6 +69,8 @@ main > div > img{
     float:left;
 }
 
+
+
 main > div > p > span {
     color: blue;
     font-weight: bold;
@@ -77,21 +79,19 @@ main > div > p > span {
 
 main > div > p > b {
     font-weight: bolder;
+
+}
+figure{
+    display: grid;
+    background-color: #999999;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 20px 0 0;
+    padding:20px
 }
 
-main > figure {
-    background-color: #999999;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin: 20px 0 0;
-    padding: 20px;
-}
-main   > figure > figcaption {
-    margin-right: 20px;
-    margin-bottom: 20px;
-    margin-left: 20px;
-}
-main > figure > figcaption > img {
+.foto {
+    margin: 20px;
     width: 180px;
     height: 180px;
     padding: 10px ;
@@ -99,6 +99,7 @@ main > figure > figcaption > img {
     background-color: white;
     border-radius: 5px;
 }
+
 
 section  {
     background-color: #666666;
