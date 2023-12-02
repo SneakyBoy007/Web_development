@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 0;
+    font-size: 18px;
+    color: #cccccc;
+    background-image: url('img/river.webp');
+    background-size: cover;
+    text-align: center;
+}
+
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 40px;
+
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+table {
+    border-collapse: collapse;
+    border-color: #cccccc;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th, td {
+    border: 1px solid #cccccc;
+}
+
+nav {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+}
+
+
+

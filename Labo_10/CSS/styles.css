@@ -1,0 +1,126 @@
+/* Algemene opmaak van de pagina */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Horizontale uitlijning in het midden */
+    align-items: center; /* Verticale uitlijning in het midden */
+    height: 100vh; /* Zorgt ervoor dat de container de volledige hoogte van het venster inneemt */
+    background-image: url('img/wallhaven-q2krpl.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff; /* Tekstkleur aanpassen voor leesbaarheid op de achtergrond */
+}
+
+.container {
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Opmaak van kopteksten */
+h1 {
+    font-size: 2em;
+    color: #333;
+}
+
+h2 {
+    font-size: 50px;
+    color: #000000;
+}
+
+h3 {
+    font-size: 1.2em;
+    color: #000000;
+}
+
+/* Opmaak van paragrafen */
+p {
+    font-size: 1em;
+    line-height: 1.4;
+    color: #000000;
+}
+
+
+/* Opmaak van knoppen */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0078d4;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #005d99;
+}
+
+/* Opmaak van lijsten */
+ul, ol {
+    list-style: none;
+}
+
+/* Opmaak van afbeeldingen */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Opmaak van formulieren */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px; /* Pas de hoogte aan naar wens */
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+nav a {
+    text-decoration: none;
+    color: #0077b6;
+    transition: color 0.3s;
+    font-size: 50px; /* Aangepaste lettergrootte (hier 50px om overeen te komen met li a) */
+}
+
+nav a:hover {
+    color: #ff6b6b;
+}
+
+ul {
+    list-style-type: none; /* Verwijder de standaard lijstpuntjes */
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+    font-size: 50px; /* Aangepaste lettergrootte (hier 20px) */
+}
+
+/* Stijl voor de koppelingen in de lijst */
+li a {
+    text-decoration: none; /* Verwijder onderstreping */
+    color: #0077b6; /* Kies een kleur voor de koppelingen */
+    transition: color 0.3s; /* Voeg een overgangseffect toe voor kleurverandering */
+}
+
+li a:hover {
+    color: #ff6b6b; /* Kleur veranderen bij hover (muis erover) */
+}
+
+
