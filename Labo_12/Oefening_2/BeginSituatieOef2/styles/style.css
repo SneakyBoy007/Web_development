@@ -1,0 +1,57 @@
+html {
+    background-color: #333;
+    font-family: helvetica, sans-serif;
+
+}
+
+* {
+    padding: 10px;
+
+}
+
+header, footer{
+    background: #ddaa00;
+    color:white ;
+}
+
+footer a:hover, nav a:hover{
+    color: pink;
+}
+
+nav{
+    background-color: #ccc;
+    padding: 5px 2px;
+    color: #ddaa00;
+}
+
+main {
+    background-color: grey;
+}
+
+body{
+    font-size: 1em;
+    margin: 5px;
+}
+
+section {
+    margin: 5px;
+}
+
+section a{
+    border: solid 1px #333;
+}
+nav a{
+    margin: 0 5px;
+    border: solid 1px #ccc;
+
+}
+
+h1{
+    margin: 0px;
+}
+
+img{
+    padding: 0px;
+}
+
+
