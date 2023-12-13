@@ -4,7 +4,7 @@ body {
     background-color: #f5f5f5;
     margin: 0;
     padding: 0;
-    height: 100vh; /* Zorgt ervoor dat de container de volledige hoogte van het venster inneemt */
+    height: 100vh;
     background-image: url('img/gojo-satoru-anime-manga-hd-wallpaper-preview.jpg');
     background-size: cover;
     background-position: center;
@@ -19,6 +19,13 @@ body {
     max-width: 960px;
     margin: 0 auto;
     padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.labo-column {
+    flex: 0 0 48%; /* 48% to leave some space between columns */
 }
 
 /* Opmaak van kopteksten */
@@ -32,18 +39,6 @@ h2 {
     color: #000000;
 }
 
-h3 {
-    font-size: 1.2em;
-    color: #000000;
-}
-
-/* Opmaak van paragrafen */
-p {
-    font-size: 1em;
-    line-height: 1.4;
-    color: #000000;
-}
-
 /* Opmaak van links */
 a {
     color: #0078d4;
@@ -53,62 +48,3 @@ a {
 a:hover {
     text-decoration: underline;
 }
-
-/* Opmaak van knoppen */
-.button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #0078d4;
-    color: #fff;
-    text-decoration: none;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.button:hover {
-    background-color: #005d99;
-}
-
-/* Opmaak van lijsten */
-ul, ol {
-    list-style: none;
-}
-
-/* Opmaak van afbeeldingen */
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Opmaak van formulieren */
-input, textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-/* Opmaak van een navigatiebalk */
-.navbar {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-}
-
-.navbar a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 10px;
-}
-
-/* Footer-opmaak */
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-}
-
-/* Aanvullende stijlen voor specifieke elementen kunnen hier worden toegevoegd */
