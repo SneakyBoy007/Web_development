@@ -1,0 +1,204 @@
+/** Volgende CSS gaan we ze geven **/
+.respimg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+
+
+}
+
+.header-container {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: #ebe8e8 solid 1px;
+}
+
+header {
+    width: 980px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+main > header{
+    width: 100%;
+}
+
+header > img {
+    height: 50px;
+    width: 160px;
+    display: block;
+}
+
+nav {
+    text-align: center;
+    color: saddlebrown;
+    padding: 10px 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+
+    width: 980px;
+    margin: 0 auto;
+}
+
+span {
+    border-right: 1px solid saddlebrown;
+    padding: 10px;
+    width: 14.3%;
+    display: inline-block;
+}
+
+span:last-child {
+    border-right: none;
+}
+
+
+span:hover {
+    background-color: #f0f0f0;
+}
+
+
+h1{
+    font-size: 2.5em;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    color: black;
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: left;
+
+
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+}
+
+.container .respimg{
+    margin:5px;
+    padding:5px;
+    background-color: white;
+}
+
+main > header {
+    background-image: url("../img/images/headerimage.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 40px;
+    color: white;
+    text-shadow: 2px 2px #8D99AE;
+    margin: 0;
+    flex-direction: column;
+
+}
+
+article > h1{
+    margin-top: 50px;
+
+}
+
+article {
+    width: 980px;
+    height: auto;
+    display: block;
+    grid-template-rows:repeat(3, 1fr) ;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+section {
+    grid-column: span 3;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+}
+
+p {
+    grid-column: 1;
+}
+
+img {
+    grid-column: 2;
+    width: 100%;
+}
+
+#right{
+    background-color: black;
+    float: right;
+    color: white;
+    display: flex;
+    width: 50%;
+    justify-content: left;
+    line-height: 2em;
+}
+
+#left{
+    float: left;
+    width: 50%;
+    display: flex;
+    justify-content: right;
+    line-height: 2em;
+}
+
+footer{
+    border-top: #ebe8e8 solid 1px;
+
+}
+footer > p{
+    padding: 20px;
+}
+
+h2{
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+h2 > a{
+    color: black;
+    text-decoration: none;
+    font-family: Helvetica, sans-serif;
+}
+
+.kicker{
+    font-size: 1.2em;
+    margin: 1px;
+    color: #ff4d56;
+}
+
+.body_recipe{
+    line-height: 2;
+    color:#666;
+}
+
+.auteur{
+    padding-right: 10px;
+    border-right: #000000 1px solid;
+    display: inline-block;
+}
+
+.timestamp{
+    color: #666;
+    padding-left: 10px;
+    display: inline-block;
+
+}

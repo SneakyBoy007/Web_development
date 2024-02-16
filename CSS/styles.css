@@ -15,7 +15,7 @@ body {
     justify-content: center;
 }
 
-.container {
+.container2 {
     max-width: 960px;
     margin: 0 auto;
     padding: 20px;
@@ -23,6 +23,14 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    justify-content: space-between;
+}
+
 
 .labo-column {
     flex: 0 0 48%; /* 48% to leave some space between columns */

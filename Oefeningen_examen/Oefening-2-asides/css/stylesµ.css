@@ -1,0 +1,24 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+    margin: 0 auto;
+}
+.links {
+    width: 25%;
+    height: 40px;
+    background:red;
+    border: black solid 5px;
+}
+.main {
+    width: 50%;
+    height: 40px;
+    background:gold;
+    border: black solid 5px;
+}
+.recht {
+    width:25%;
+    height: 40px;
+    background: blue;
+    border: black solid 5px;
+}
