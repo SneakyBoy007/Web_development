@@ -7,10 +7,10 @@ body {
     justify-content: center; /* Horizontale uitlijning in het midden */
     align-items: center; /* Verticale uitlijning in het midden */
     height: 100vh; /* Zorgt ervoor dat de container de volledige hoogte van het venster inneemt */
-    background-image: url('img/img.png');
-    background-color: #f6f6f6;
+    background-image: url('img/Hiro.(Darling.in.the.FranXX).full.3086777.jpg');
+    background-color: #ffffff;
     background-size: auto;
-    background-position: left;
+    background-position: right;
     background-repeat: no-repeat;
     color: #fff; /* Tekstkleur aanpassen voor leesbaarheid op de achtergrond */
 }
