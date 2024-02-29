@@ -2,11 +2,51 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles/style.css">
-    <script type="text/javascript" charset="utf-8" src="scripts/code.js"></script>
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rekenmachine</title>
+    <link rel="stylesheet" type="text/css" href="styles/css.css">
+
 </head>
 <body>
+
+<table id="invoice">
+    <thead>
+    <tr>
+        <th>Product</th>
+        <th>Prijs</th>
+        <th>Aantal</th>
+        <th>BTW</th>
+        <th>Subtotaal</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Product 1</td>
+        <td class="prijs">10.00 Eur</td>
+        <td><input type="number" value="0" class="aantal"></td>
+        <td class="btw">6%</td>
+        <td class="subtotaal">0.00 Eur</td>
+    </tr>
+    <tr>
+        <td>Product 2</td>
+        <td class="prijs">20.00 Eur</td>
+        <td><input type="number" value="0" class="aantal"></td>
+        <td class="btw">10%</td>
+        <td class="subtotaal">0.00 Eur</td>
+    </tr>
+    <tr>
+        <td>Totaal</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td id="totaal"></td>
+    </tr>
+    </tbody>
+</table>
+
+<button onclick="herbereken()">Herbereken</button>
+
+<script type="text/javascript" charset="UTF-8" src="scripts/javascript.js"></script>
 
 </body>
 </html>
