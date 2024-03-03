@@ -5,24 +5,28 @@ const setup = () => {
 };
 
 const herbereken = () => {
-    var rows = document.querySelectorAll("#invoice tbody tr");
+    var tbody = document.getElementById("invoice").getElementsByTagName("tbody")[0];
+    var rows = tbody.getElementsByTagName("tr");
     var totaal = 0;
 
-    rows.forEach(function(row, index) {
-        // Overslaan van de laatste rij (index 0-based)
-        if (index < rows.length - 1) {
-            var prijs = parseFloat(row.querySelector(".prijs").textContent);
-            var aantal = parseInt(row.querySelector(".aantal").value);
-            var btw = parseFloat(row.querySelector(".btw").textContent) / 100;
+    for (var i = 0; i < rows.length; i++) {
+        var row = rows[i];
+        var cells = row.getElementsByTagName("td");
 
-            var subtotaal = (prijs * aantal)+(prijs * aantal)*btw;
+        // Overslaan van de laatste rij
+        if (i < rows.length - 1) {
+            var prijs = parseFloat(cells[1].textContent);
+            var aantal = parseInt(cells[2].getElementsByTagName("input")[0].value);
+            var btw = parseFloat(cells[3].textContent) / 100;
+
+            var subtotaal = (prijs * aantal) + (prijs * aantal) * btw;
             var totaalBedrag = subtotaal;
 
-            row.querySelector(".subtotaal").textContent = subtotaal.toFixed(2) + " Eur";
+            cells[4].textContent = subtotaal.toFixed(2) + " Eur";
 
             totaal += totaalBedrag;
         }
-    });
+    }
 
     document.getElementById("totaal").textContent = totaal.toFixed(2) + " Eur";
 };
