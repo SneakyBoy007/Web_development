@@ -7,9 +7,9 @@ body {
     justify-content: center; /* Horizontale uitlijning in het midden */
     align-items: center; /* Verticale uitlijning in het midden */
     height: 100vh; /* Zorgt ervoor dat de container de volledige hoogte van het venster inneemt */
-    background-image: url('img/ezgif-3-0926c66b30-removebg-preview.png');
-    background-color: #FFFFFF;
-    background-size: auto;
+    background-image: url('img/anime-girl-green-color-wallpaper.jpg');
+    background-color: #daedf1;
+    background-size: cover;
     background-position: right bottom;
     background-repeat: no-repeat;
     color: #fff; /* Tekstkleur aanpassen voor leesbaarheid op de achtergrond */

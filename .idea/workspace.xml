@@ -13,9 +13,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="CSS File" />
         <option value="HTML File" />
         <option value="JavaScript File" />
-        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -57,11 +57,11 @@
       <recent name="C:\Users\Gebruiker\OneDrive - Hogeschool VIVES\Documenten\GitHub\Web_development\Web_development\Labo_12" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Gebruiker\OneDrive - Hogeschool VIVES\Documenten\GitHub\Web_development\Web_development\Labo_16\Invulformulier\css" />
+      <recent name="C:\Users\Gebruiker\OneDrive - Hogeschool VIVES\Documenten\GitHub\Web_development\Web_development\Labo_16" />
       <recent name="C:\Users\Gebruiker\OneDrive - Hogeschool VIVES\Documenten\GitHub\Web_development\Web_development\Oefeningen_examen\BeginSituatie_Kitchn\img" />
       <recent name="C:\Users\Gebruiker\OneDrive - Hogeschool VIVES\Documenten\GitHub\Web_development\Web_development\Oefeningen_examen\BeginSituatie_Kitchn\css" />
       <recent name="C:\Users\Gebruiker\OneDrive - Hogeschool VIVES\Documenten\GitHub\Web_development\Web_development" />
-      <recent name="C:\Users\Gebruiker\OneDrive - Hogeschool VIVES\Documenten\GitHub\Web_development\Web_development\Labo_10\Piet_Mondriaan" />
-      <recent name="C:\Users\Gebruiker\OneDrive - Hogeschool VIVES\Documenten\GitHub\Web_development\Web_development\Labo_9\CSS\img" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -106,6 +106,8 @@
       <workItem from="1709217650776" duration="632000" />
       <workItem from="1709225160307" duration="2994000" />
       <workItem from="1709461735326" duration="67000" />
+      <workItem from="1709467295779" duration="950000" />
+      <workItem from="1709714466914" duration="6452000" />
     </task>
     <servers />
   </component>
