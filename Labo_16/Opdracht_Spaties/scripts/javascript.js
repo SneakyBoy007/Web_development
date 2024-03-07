@@ -14,7 +14,6 @@ const printCharacters = ()=> {
 }
 
 const maakMetSpaties = (inputText) => {
-    let result="";
     return inputText.split('').join(' ');
 }
 
