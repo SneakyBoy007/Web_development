@@ -3,21 +3,39 @@
 <head>
 	<title>Oefening</title>
 	<link rel="stylesheet" href="styles/styles.css">
-
 </head>
 
 <body>
 
-	<form>
-		<div class="line">
-			<label for="txtVoornaam">Voornaam</label>
-			<input type="text" id="txtVoornaam" />
-			<span class="errorMessage" id="errVoornaam"></span>
-		</div>
-		<input type="button" id="btnValideer" value="Valideer" />
-	</form>
+<form id="myForm">
+	<div class="line">
+		<label for="txtVoornaam">Voornaam</label>
+		<input type="text" id="txtVoornaam" />
+		<span class="errorMessage" id="errVoornaam"></span>
+	</div>
+	<div class="line">
+		<label for="txtFamilienaam">Familienaam</label>
+		<input type="text" id="txtFamilienaam" />
+		<span class="errorMessage" id="errFamilienaam"></span>
+	</div>
+	<div class="line">
+		<label for="txtGeboortedatum">Geboortedatum</label>
+		<input type="text" id="txtGeboortedatum"  placeholder="jjjj-mm-dd"/>
+		<span class="errorMessage" id="errGeboortedatum"></span>
+	</div>
+	<div class="line">
+		<label for="txtEmail">Email</label>
+		<input type="text" id="txtEmail" />
+		<span class="errorMessage" id="errEmail"></span>
+	</div>
+	<div class="line">
+		<label for="txtAantalKinderen">Aantal kinderen</label>
+		<input type="text" id="txtAantalKinderen" />
+		<span class="errorMessage" id="errAantalKinderen"></span>
+	</div>
+	<input type="button" id="btnValideer" value="Valideer" />
+</form>
 
-
-	<script  src="scripts/code.js"></script>
+<script src="scripts/code.js"></script>
 </body>
 </html>

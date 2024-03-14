@@ -1,27 +1,27 @@
-// In het bestand scripts/javascript.js
-
 const setup = () => {
-    const isRoker = document.getElementById('isRoker').checked;
-    const moedertaal = document.querySelector('input[name="moedertaal"]:checked').value;
-    const favorieteBuurland = document.getElementById('favorieteBuurland').value;
-    const bestelling = [...document.getElementById('bestelling').selectedOptions].map(option => option.value);
-
-    console.log('Is roker:', isRoker);
-    console.log('Moedertaal:', moedertaal);
-    console.log('Favoriete buurland:', favorieteBuurland);
-    console.log('Bestelling:', bestelling);
+    toonResultaat();
 }
 
 window.addEventListener("load", setup);
 
 window.toonResultaat = () => {
-    const isRoker = document.getElementById('isRoker').checked;
-    const moedertaal = document.querySelector('input[name="moedertaal"]:checked').value;
-    const favorieteBuurland = document.getElementById('favorieteBuurland').value;
-    const bestelling = [...document.getElementById('bestelling').selectedOptions].map(option => option.value);
+    if (!document.getElementById("isRoker").checked) {
+        console.log("Is geen roker");
+    } else {
+        console.log("Is een roker");
+    }
 
-    console.log('Is roker:', isRoker);
-    console.log('Moedertaal:', moedertaal);
-    console.log('Favoriete buurland:', favorieteBuurland);
-    console.log('Bestelling:', bestelling);
+    console.log(`Moedertaal is ${document.querySelector("input[name='moedertaal']:checked")?.value || "niet geselecteerd"}`);
+
+    if (!document.getElementById("favorieteBuurland").value) {
+        console.log("Favoriete buurland is niet geselecteerd")
+    } else {
+        console.log(`Favoriete buurland is ${document.getElementById("favorieteBuurland").value}`);
+    }
+
+    if (!document.getElementById("bestelling").value) {
+        console.log("Bestelling bestaat uit niets");
+    } else {
+        console.log(`Bestelling bestaat uit ${Array.from(document.getElementById("bestelling").selectedOptions, option => option.value).join(" ")}`);
+    }
 }
