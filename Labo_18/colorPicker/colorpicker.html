@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGB Color Picker</title>
+    <link rel="stylesheet" type="text/css" href="styles/css.css">
+</head>
+<body>
+<div class="container">
+    <div class="sliders">
+        <div class="slider-container">
+            <input type="range" min="0" max="255" value="0" id="red-slider">
+            <span id="red-value" class="slider-value"></span>
+        </div>
+        <div class="slider-container">
+            <input type="range" min="0" max="255" value="0" id="green-slider">
+            <span id="green-value" class="slider-value"></span>
+        </div>
+        <div class="slider-container">
+            <input type="range" min="0" max="255" value="0" id="blue-slider">
+            <span id="blue-value" class="slider-value"></span>
+        </div>
+        <button id="save-button">Save</button> <!-- Save knop -->
+    </div>
+    <div id="rgb-values"></div>
+    <div id="color-box"></div>
+    <div id="swatch-container" class="swatch-container"></div>
+</div>
+
+<script src="scripts/javascript.js"></script>
+</body>
+</html>

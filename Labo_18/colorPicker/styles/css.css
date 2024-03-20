@@ -1,0 +1,57 @@
+#color-box {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.sliders {
+    display: flex;
+    flex-direction: column;
+}
+
+.slider-container {
+    display: flex;
+    align-items: center; /* Om de waarde naast de slider uit te lijnen */
+    margin-bottom: 10px; /* Ruimte tussen sliders */
+}
+
+.slider-value {
+    margin-left: 10px; /* Ruimte tussen slider en waarde */
+}
+
+#rgb-values {
+    font-size: 14px;
+}
+
+.swatch-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.swatch {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    position: relative;
+}
+
+.delete-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
