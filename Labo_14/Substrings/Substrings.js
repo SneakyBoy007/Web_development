@@ -8,8 +8,7 @@ const setup = () => {
     const neemSubstring = (begin, einde) =>{
         begin = parseInt(beginNummer.value);
         einde =  parseInt(eindeNummer.value);
-        let substring = txtInput.value.substring(begin, einde);
-        txtOutput.innerHTML= substring;
+        txtOutput.innerHTML= txtInput.value.substring(begin, einde);
     }
 
     btnSubstring.addEventListener('click', neemSubstring);

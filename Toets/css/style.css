@@ -1,0 +1,23 @@
+#img {
+  background-image: url('../img/without-egg.png');
+  width: 200px;
+  height: 200px;
+}
+
+#img.with-egg {
+  background-image: url('../img/with-egg.png');
+}
+
+#img.hidden {
+  display: none;
+}
+
+#note {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+label {
+  display: inline-block;
+  width: 115px;
+}

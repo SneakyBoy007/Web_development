@@ -2,12 +2,11 @@ const setup = () => {
     let knopje = document.getElementById("knop");
     let txtOutput = document.getElementById("txtOutput");
 
-    const Kopiëren = () => {
+    const copy = () => {
         let txtInput = document.getElementById("txtInput");
-        let tekst = txtInput.value;
-        let nieuweTekst = txtOutput.innerHTML= tekst;
+        txtOutput.innerHTML= txtInput.value;
     }
 
-    knopje.addEventListener("click", Kopiëren);
+    knopje.addEventListener("click", copy);
 }
 window.addEventListener("load", setup);
