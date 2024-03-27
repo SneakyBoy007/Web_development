@@ -25,18 +25,18 @@ const veranderFoto = () =>{
 
 const telKarakters = () =>{
     let teken = document.getElementById("tekens").value;
-    let tekst = document.getElementById("note").value;
+    let tekst = document.getElementById("note").textContent;
     let antwoord = document.getElementById("note2");
     tekst = tekst.toLowerCase();
     teken = teken.toLowerCase();
 
     tekst = tekst.split("");
-    let count;
+    let count = 0;
     for(let i = 0; i < tekst.length; i++){
         if(tekst[i] === teken){
             count++;
         }
     }
-    antwoord.innerHTML = "Letter \"" + teken + "\" komt " + count + "keer voor in bovenstaande zin."
+    antwoord.innerHTML = "Letter \"" + teken + "\" komt " + count + " keer voor in bovenstaande zin."
 }
 window.addEventListener("load", setup);
