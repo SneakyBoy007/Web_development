@@ -86,15 +86,22 @@ const controleren = () => {
         gevonden++;
         gekozenKaarten.forEach(imgElement => {
             imgElement.parentElement.removeEventListener('click', handleClick);
+            imgElement.classList.add('correct');
         });
 
 
+
     } else {
+        gekozenKaarten.forEach(imgElement=>{
+            imgElement.classList.add('incorrect');
+        })
         setTimeout(() => {
+
             gekozenKaarten.forEach(imgElement => {
                 imgElement.style.display = 'none';
                 imgElement.parentElement.style.background = "";
                 imgElement.classList.remove('gekozenkaart');
+                imgElement.classList.remove("incorrect")
             });
         }, 1000);
 
