@@ -1,4 +1,19 @@
-.div{
-    height: 800px;
+#playField {
     width: 600px;
+    height: 800px;
+    position: relative;
+    margin: 20px auto;
+    border: 1px solid black;
+}
+
+#object {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+button {
+    display: block;
+    margin: 10px auto;
 }
