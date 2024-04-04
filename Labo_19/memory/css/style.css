@@ -1,0 +1,15 @@
+.memory-board {
+    display: flex;
+    flex-wrap: wrap;
+    width: 480px; /* Pas deze breedte aan op basis van het aantal kaarten */
+    margin: 0 auto;
+}
+
+.card {
+    width: 100px; /* Pas deze afmetingen aan op basis van de kaartafbeeldingen */
+    height: 100px;
+    margin: 10px;
+    background: url('achterkant.jpg') no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}

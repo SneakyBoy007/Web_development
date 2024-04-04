@@ -30,15 +30,18 @@ const setup = () => {
     object.addEventListener('click', () => {
         if (parseInt(object.src.split('/').pop().split('.')[0]) === 0) {
             gameOver();
+        } else {
+            global.score++;
+            scoreDisplay.textContent = global.score;
+
+            moveObject();
+
+            clearInterval(global.timeoutId);
+            global.timeoutId = setInterval(moveObject, global.MOVE_DELAY);
+
         }
 
-        global.score++;
-        scoreDisplay.textContent = global.score;
 
-        moveObject();
-
-        clearInterval(global.timeoutId);
-        global.timeoutId = setInterval(moveObject, global.MOVE_DELAY);
     });
 };
 
@@ -62,7 +65,7 @@ const gameOver = () => {
     alert('Game Over! Your score is ' + global.score);
     startButton.style.display = 'block';
     global.score = 0;
-    scoreDisplay.textContent = global.score;
+    scoreDisplay.textContent = 0;
 };
 
 window.addEventListener('load', setup);
