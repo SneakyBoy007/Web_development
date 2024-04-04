@@ -1,15 +1,28 @@
 .memory-board {
     display: flex;
     flex-wrap: wrap;
-    width: 480px; /* Pas deze breedte aan op basis van het aantal kaarten */
+    width: 1000px;
     margin: 0 auto;
 }
 
 .card {
-    width: 100px; /* Pas deze afmetingen aan op basis van de kaartafbeeldingen */
-    height: 100px;
+    width: 225px;
+    height: 319px;
     margin: 10px;
-    background: url('achterkant.jpg') no-repeat;
-    background-size: cover;
+    background: url('../img/achterkant.jpg') no-repeat;
+    background-size: auto;
     cursor: pointer;
+}
+
+.kaart1,
+.kaart2,
+.kaart3,
+.kaart4,
+.kaart5,
+.kaart6 {
+    display: none;
+}
+
+.gekozenkaart{
+
 }

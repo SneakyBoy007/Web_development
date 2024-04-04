@@ -1,9 +1,16 @@
 const AANTAL_HORIZONTAAL = 4;
 const AANTAL_VERTICAAL = 3;
-const AANTAL_KAARTEN = 6;
 let isBusy = false;
+let count = 0;
+let gevonden = 0;
+let moves = 0;
 
 const kaartNamen = ['kaart1.jpg', 'kaart2.jpg', 'kaart3.jpg', 'kaart4.jpg', 'kaart5.jpg', 'kaart6.jpg'];
+
+const dubbeleKaarten = [];
+kaartNamen.forEach(kaart => {
+    dubbeleKaarten.push(kaart, kaart);
+});
 
 function shuffle(array) {
     for (let i = array.length - 1; i > 0; i--) {
@@ -12,57 +19,100 @@ function shuffle(array) {
     }
 }
 
-function createBoard() {
+const setup = () =>{
+    createBoard();
+}
+
+const createBoard= () =>{
     const board = document.querySelector('.memory-board');
-    shuffle(kaartNamen);
+    shuffle(dubbeleKaarten);
     for (let i = 0; i < AANTAL_HORIZONTAAL * AANTAL_VERTICAAL; i++) {
-        const card = document.createElement('div');
-        card.classList.add('card');
-        card.setAttribute('data-card', kaartNamen[i]);
-        card.addEventListener('click', flipCard);
-        const img = document.createElement('img'); // create img element
-        img.src = 'img/' + kaartNamen[i]; // set src attribute with folder 'img/'
-        img.classList.add('card-image'); // add class to style image if necessary
-        card.appendChild(img); // append image to card
-        board.appendChild(card);
+        const cardElement = document.createElement('div');
+        cardElement.classList.add('card');
+
+        const imgElement = document.createElement('img');
+        imgElement.src = 'img/' + dubbeleKaarten[i];
+        const kaartKlasse = dubbeleKaarten[i].split('.')[0];
+        imgElement.classList.add(kaartKlasse);
+        cardElement.appendChild(imgElement);
+
+        board.appendChild(cardElement);
+
+        cardElement.addEventListener('click', handleClick);
     }
 }
 
-function flipCard() {
-    if (isBusy) return;
-    if (this.classList.contains('flipped')) return;
+const aangeklikt = (imgElement, cardElement) => {
 
-    this.classList.add('flipped');
+    moves++;
+    imgElement.style.display = 'block';
+    cardElement.style.background = 'none';
+    imgElement.classList.add('gekozenkaart');
 
-    const flippedCards = document.querySelectorAll('.flipped');
-    if (flippedCards.length === 2) {
-        isBusy = true;
-        checkMatch();
-        setTimeout(() => {
-            isBusy = false;
-        }, 1000);
+    count++;
+
+    if (count === 2 && gevonden !== 6) {
+        controleren();
     }
+
+    if (gevonden === 6){
+        stoppen();
+    }
+
 }
 
-function checkMatch() {
-    const flippedCards = document.querySelectorAll('.flipped');
-    const [card1, card2] = flippedCards;
+const handleClick = (event) => {
 
-    if (card1.dataset.card === card2.dataset.card) {
-        card1.classList.add('match');
-        card2.classList.add('match');
-        setTimeout(() => {
-            card1.style.visibility = 'hidden';
-            card2.style.visibility = 'hidden';
-        }, 1000);
+    const cardElement = event.currentTarget; // Haal het huidige doelelement op (de kaart)
+    const imgElement = cardElement.querySelector('img'); // Vind de afbeelding binnen de kaart
+    aangeklikt(imgElement, cardElement)
+
+}
+
+
+const controleren = () => {
+    count = 0;
+    const gekozenKaarten = document.querySelectorAll('.gekozenkaart');
+
+
+    const eersteKaartKlassen = Array.from(gekozenKaarten[0].classList);
+    const tweedeKaartKlassen = Array.from(gekozenKaarten[1].classList);
+
+
+    const klassenOvereenkomen = eersteKaartKlassen.every(klasse => tweedeKaartKlassen.includes(klasse));
+
+    if (klassenOvereenkomen) {
+        console.log('Match gevonden!');
+        gevonden++;
+        gekozenKaarten.forEach(imgElement => {
+            imgElement.parentElement.removeEventListener('click', handleClick);
+        });
+
+
     } else {
-        card1.classList.add('no-match');
-        card2.classList.add('no-match');
         setTimeout(() => {
-            card1.classList.remove('flipped', 'no-match');
-            card2.classList.remove('flipped', 'no-match');
+            gekozenKaarten.forEach(imgElement => {
+                imgElement.style.display = 'none';
+                imgElement.parentElement.style.background = "";
+                imgElement.classList.remove('gekozenkaart');
+            });
         }, 1000);
+
     }
+    gekozenKaarten.forEach(imgElement => {
+        imgElement.classList.remove('gekozenkaart');
+    });
+
+
 }
 
-document.addEventListener('load', createBoard);
+const stoppen = () => {
+    setTimeout(() => {
+        alert(`Gefeliciteerd! Je hebt gewonnen in ${moves} zetten.`);
+        location.reload();
+    }, 1000);
+}
+
+
+
+document.addEventListener('DOMContentLoaded', setup);
