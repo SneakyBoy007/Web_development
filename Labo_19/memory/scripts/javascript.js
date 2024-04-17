@@ -1,6 +1,5 @@
 const AANTAL_HORIZONTAAL = 4;
 const AANTAL_VERTICAAL = 3;
-let isBusy = false;
 let count = 0;
 let gevonden = 0;
 let moves = 0;
@@ -109,8 +108,6 @@ const controleren = () => {
     gekozenKaarten.forEach(imgElement => {
         imgElement.classList.remove('gekozenkaart');
     });
-
-
 }
 
 const stoppen = () => {
