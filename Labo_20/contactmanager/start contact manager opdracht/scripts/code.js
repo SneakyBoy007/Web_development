@@ -1,6 +1,7 @@
 let personen = [];
 
 
+
 const bewaarBewerktePersoon = () => {
     console.log("Klik op de knop bewaar");
 
@@ -24,7 +25,7 @@ const bewaarBewerktePersoon = () => {
             aantalKinderen: aantalKinderen
         };
 
-        const selectedIndex = document.getElementById("lstPersonen").selectedIndex;
+       let selectedIndex = document.getElementById("lstPersonen").selectedIndex;
 
         if (selectedIndex === -1) {
             // Nieuwe persoon toevoegen
@@ -45,8 +46,7 @@ const bewaarBewerktePersoon = () => {
 // Event listener (btnNieuw click)
 const bewerkNieuwePersoon = () => {
     console.log("Klik op de knop nieuw");
-
-    // Maak het formulier leeg
+    document.getElementById("lstPersonen").selectedIndex = -1;
     resetFormulier();
 };
 
@@ -74,6 +74,8 @@ const resetFormulier = () => {
     document.getElementById("txtEmail").value = "";
     document.getElementById("txtAantalKinderen").value = "";
 };
+
+
 
 // Bij het selecteren van een persoon in de lijst, toon de gegevens in het formulier
 const toonGeselecteerdePersoon = () => {
