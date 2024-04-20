@@ -9,7 +9,6 @@ body {
     height: 100vh; /* Zorgt ervoor dat de container de volledige hoogte van het venster inneemt */
     background-image: url("img/spy.jpg");
     background-color: #ffffff;
-    background-size: auto;
     background-position: bottom right;
     background-repeat: no-repeat;
     color: #fff; /* Tekstkleur aanpassen voor leesbaarheid op de achtergrond */
