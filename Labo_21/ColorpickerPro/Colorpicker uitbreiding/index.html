@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/index.css">
+    <title>Opdracht Colorpicker</title>
+</head>
+<body>
+    <form action="javascript:void(0)" class="color_picker">
+        <div class="componenten">
+            <div class="sliders_containers">
+                <div class="sliders">
+                    0
+                    <input class="slider" id="color_r" type="range" min="0" max="255" step="1" value="0" aria-label="">
+                    255
+                </div>
+                <div class="slider">
+                    0
+                    <input class="slider" id="color_g" type="range" min="0" max="255" step="1" value="0" aria-label="">
+                    255
+                </div>
+                <div class="slider">
+                    0
+                    <input class="slider" id="color_b" type="range" min="0" max="255" step="1" value="0" aria-label="">
+                    255
+                </div>
+            </div>
+            <div class="labels">
+                <span class="label">Red: <span id="label_r">0</span> </span>
+                <span class="label">Green: <span id="label_g">0</span> </span>
+                <span class="label">Blue: <span id="label_b">0</span> </span>
+            </div>
+        </div>
+        <div class="swatch" id="swatch">
+
+        </div>
+        <div>
+            <button id="input_button_save">Save</button>
+        </div>
+    </form>
+    <div id="stored_container">
+
+    </div>
+
+    <template id="template_stored_swatch">
+        <div class="stored_swatch" style="background-color: rgb(0, 0, 0)">
+            <button class="input_button_remove">X</button>
+        </div>
+    </template>
+<script src="scripts/index.js"></script>
+</body>
+</html>
