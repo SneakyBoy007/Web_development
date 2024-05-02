@@ -1,0 +1,56 @@
+body {
+    padding-top: 50px;
+}
+
+#resultContainer {
+    margin-top: 50px;
+}
+
+.card {
+    margin-top: 10px;
+}
+
+/* https://www.lockedownseo.com/social-media-colors*/
+.youtube-card {
+    background-color: #ff0000 !important;
+    color: #ffffff;
+}
+
+a.youtube-button {
+    background-color: #282828;
+    color: #ffffff;
+    border: 0;
+}
+
+.instagram-card {
+    background-color: #c32aa3 !important;
+    color: white;
+}
+
+a.instagram-button {
+    background-color: #f46f30;
+    color: #ffdc7d;
+    border: 0;
+}
+
+.google-card {
+    background-color: #4285f4 !important;
+    color: white;
+}
+
+a.google-button {
+    background-color: #ea4335;
+    color: #fbbc05;
+    border: 0;
+}
+
+.twitter-card {
+    background-color: #1da1f2 !important;
+    color: white;
+}
+
+a.twitter-button {
+    background-color: #14171a;
+    color: #f5f8fa;
+    border: 0;
+}
