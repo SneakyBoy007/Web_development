@@ -76,31 +76,31 @@ const createCard = (titel, text, url) => {
 }
 
 const createElementWithClassName = (element, className) => {
-    let e = document.createElement(element);
-    e.setAttribute("class", className);
-    return e;
+    let NewElement = document.createElement(element);
+    NewElement.setAttribute("class", className);
+    return NewElement;
 }
 
 const createElementWithClassNameAndText = (element, className, text) => {
-    let e = createElementWithClassName(element, className);
-    e.appendChild(document.createTextNode(text));
-    return e;
+    let NewElement = createElementWithClassName(element, className);
+    NewElement.appendChild(document.createTextNode(text));
+    return NewElement;
 }
 
 const createLinkButton = (url) => {
-    let b = document.createElement("a");
-    b.href = url;
-    b.classList.add('btn');
-    b.classList.add('btn-primary');
-    b.target = '_blank';
-    b.appendChild(document.createTextNode("Go!"));
-    return b;
+    let newButton = document.createElement("a");
+    newButton.href = url;
+    newButton.classList.add('btn');
+    newButton.classList.add('btn-primary');
+    newButton.target = '_blank';
+    newButton.appendChild(document.createTextNode("Go!"));
+    return newButton;
 }
 
 const restoreHistory = () => {
     global.history = JSON.parse(localStorage.getItem('history'));
     for(let i = 0; i < global.history.length; i ++) {
-        historyCardToevoegen(global.history[i].titel, global.history[i].text, global.history[i].url);
+        createCard(global.history[i].titel, global.history[i].text, global.history[i].url);
     }
 }
 
