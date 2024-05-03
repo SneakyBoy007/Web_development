@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head> 
+	<title>My Internet Start Page</title>
+	<link rel="stylesheet" type="text/css" href="styles/index.css">
+	<link rel="stylesheet" type="text/css" href="styles/bootstrap-grid.css">
+</head>
+<body>
+	<div class="container">
+		<h1>My Internet Start Page</h1>
+		<div class="form-group">
+			<label for="input">Zoekopdracht</label>
+			<input type="text" class="form-control form-control-lg" id="input" aria-describedby="help" placeholder="Enter commando">
+			<small id="help" class="form-text text-muted">Start your commando with "/[character] [zoekopdracht]"</small>
+		</div>
+		<button type="button" class="btn btn-success btn-lg btn-block" id="button">GO!</button>
+
+		<div class="container" id="result">
+			<h2>History</h2>
+			<div class="row"></div>
+		</div>
+	</div>
+	<script src="scripts/index.js"></script>
+</body> 
+</html> 

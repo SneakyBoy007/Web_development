@@ -5,7 +5,7 @@ let global = {
 const setup = () => {
     document.getElementById('btnGo').addEventListener('click', zoek);
     if(localStorage.getItem('history') !== null) {
-        restoreHistory();
+        restore();
     }
 }
 
@@ -22,22 +22,22 @@ const zoek = () => {
             case 'g':
                 url = 'https://www.google.com/search?q=' + zoekOpdracht;
                 window.open(url);
-                historyToevoegen('Google', zoekOpdracht, url);
+                UpdateGeschiedenis('Google', zoekOpdracht, url);
                 break;
             case 'y':
                 url = 'https://www.youtube.com/search?q=' + zoekOpdracht;
                 window.open(url);
-                historyToevoegen('Youtube', zoekOpdracht, url);
+                UpdateGeschiedenis('Youtube', zoekOpdracht, url);
                 break;
             case 't':
                 url = 'https://www.twitter.com/search?q=' + zoekOpdracht;
                 window.open(url);
-                historyToevoegen('Twitter', zoekOpdracht, url);
+                UpdateGeschiedenis('Twitter', zoekOpdracht, url);
                 break;
             case 'i':
                 url = 'https://www.instagram.com/explore/search/keyword/?q=' + zoekOpdracht;
                 window.open(url);
-                historyToevoegen('Instagram', zoekOpdracht, url);
+                UpdateGeschiedenis('Instagram', zoekOpdracht, url);
                 break;
             default:
                 alert('Unknown command prefix')
@@ -45,7 +45,7 @@ const zoek = () => {
     }
 }
 
-const historyToevoegen = (titel, text, url) => {
+const UpdateGeschiedenis = (titel, text, url) => {
     global.history.push({
         titel: titel,
         text: text,
@@ -97,8 +97,9 @@ const createLinkButton = (url) => {
     return newButton;
 }
 
-const restoreHistory = () => {
+const restore = () => {
     global.history = JSON.parse(localStorage.getItem('history'));
+
     for(let i = 0; i < global.history.length; i ++) {
         createCard(global.history[i].titel, global.history[i].text, global.history[i].url);
     }

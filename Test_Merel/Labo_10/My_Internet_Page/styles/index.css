@@ -1,0 +1,54 @@
+body {
+    padding-top: 50px;
+}
+
+#result {
+    margin-top: 50px;
+}
+
+.kaart {
+    margin-top: 10px;
+}
+
+.google {
+    background-color: #4285f4;
+}
+
+a.google-btn {
+    background-color: #ea4335;
+    color: #fbbc05;
+}
+
+.youtube {
+    background-color: #ff0000;
+}
+
+a.youtube-btn {
+    background-color: #282828;
+}
+
+.twitter {
+    background-color: #1da1f2;
+}
+
+a.twitter-btn {
+    background-color: #14171a;
+    color: #f5f8fa;
+}
+
+.insta {
+    background-color: #c32aa3;
+}
+
+a.insta-btn {
+    background-color: #f46f30;
+    color: #ffdc7d;
+}
+
+a.insta-btn, a.twitter-btn, a.google-btn, a.youtube-btn{
+    border: 0;
+}
+
+.google, .youtube, a.youtube-btn, .twitter, .insta {
+    color: #FFFFFF;
+}
