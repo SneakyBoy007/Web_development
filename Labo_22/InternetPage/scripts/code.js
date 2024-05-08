@@ -60,7 +60,7 @@ const createCard = (titel, text, url) => {
     let card = createElementWithClassName("div", "card");
     card.classList.add(titel.toLowerCase()+"-card");
     let cardBody = createElementWithClassName("div", "card-body");
-    let cardTitle = createElementWithClassNameAndText("h5", "card-title", text);
+    let cardTitle = createElementWithClassNameAndText("h5", "card-title", titel);
     let cardText = createElementWithClassNameAndText("p", "card-text", text);
     let linkGo = createLinkButton(url);
     linkGo.classList.add(titel.toLowerCase()+"button");
